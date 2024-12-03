@@ -28,7 +28,12 @@ class _PescarPantallaState extends State<PescarPantalla> {
   }
 
   void _ponerCaptura() {
-    if (_pescaLogica == null) return;
+    if (_pescaLogica == null) {
+      setState(() {
+        _mensage = 'Por favor, establezca un límite primero.';
+      });
+      return;
+    }
 
     final int pesoCaptura = int.tryParse(_capturaController.text) ?? -1;
     if (pesoCaptura < 0) {

@@ -1,5 +1,7 @@
+import 'package:examen_gallegos_edgar/Pantallas/bienvenida_pantalla.dart';
 import 'package:examen_gallegos_edgar/Pantallas/principal_pantalla.dart';
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: PescarPantalla()
+      home: BienvenidaPantalla()
     );
   }
 }
